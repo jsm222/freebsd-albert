@@ -1,0 +1,11 @@
+--- plugins/CMakeLists.txt.orig	2018-12-31 15:24:22 UTC
++++ plugins/CMakeLists.txt
+@@ -4,7 +4,7 @@ set(CMAKE_VISIBILITY_INLINES_HIDDEN 1)
+ 
+ # Set the RPATH for the library lookup
+ set(CMAKE_INSTALL_RPATH "$ORIGIN/../")
+-
++set(CMAKE_SHARED_LINKER_FLAGS "${CMAKE_SHARED_LINKER_FLAGS} -L/usr/local/lib")
+ # FrontendPlugins
+ 
+ option(BUILD_WIDGETBOXMODEL "Build the frontend" ON)
