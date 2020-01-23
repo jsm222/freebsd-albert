@@ -17,7 +17,7 @@ USES=	cmake localbase xorg qt:5
 USE_QT=	charts network sql x11extras gui core widgets concurrent dbus \
 	declarative svg
 
-USE_XORG=x11 xext
+USE_XORG=x11 xext sm ice
 USE_LDCONFIG=	yes
 COMPILER=	c++14-lang
 USE_GITHUB=	yes
